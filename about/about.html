@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory Blessed Ministry</title>
+    <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" href="/header/header.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <section id="home">
+        <!-- MENU -->
+        <div id="fixed-nav" id="header-nav">
+           <div id="menu-list">
+               <nav id="menu">
+                   <ul>
+                       <li><a href="/index.html"><span></span>home</a></li>
+                       <li><a href="#"><span></span>about</a></li>
+                       <li><a href="/sermon/sermons.html"><span></span>sermons</a></li>
+                       <li><a href="/ministry/ministry.html"><span></span>ministries</a></li>
+                       <li><a href="/blog/blog.html"><span></span>blog</a></li>
+                       <li><a href="/contact/contact.html"><span></span>contact us</a></li>
+                       <li><a href="/donate/donate.html">donate</a></li>
+                   </ul>
+               </nav>
+           </div>
+       </div>
+       
+       
+       <div class="logo">
+           <img src="/images/VBM LOGO-1.png" alt="">
+       </div>
+      <div id="menu-btn">
+       <i class="fa fa-bars"></i>
+      </div>
+      <div class="header-banner">
+       <div class="header-text sermon-page">
+           <ul>
+               <li><a href="/index.html">home</a></li>
+               <li><a href="#">about us</a></li>
+           </ul>
+           <h1>about us</h1>
+       </div>
+       
+      </div>
+      <div class="banner-icon">
+   
+           <div class="inner-circle sermons">
+               <i class="fa fa-book"></i>
+           </div>
+       </div>
+    </section>
+
+    <!-- about section starts herer -->
+    <section class="next-object about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/images/C-31.jpg" alt="">
+                </div>
+                <div class="about-text">
+                    <h1>we are taking bold steps of faith in christ jesus to impart the gospel to many nations</h1>
+                    <div class="box-color">
+                        <div class="red-line">
+                            <div class="white-box"></div>
+                        </div>
+                    </div>
+                    <h2>We joyfully welcome you to victory blessed ministry where Christ Jesus is the center of it all.</h2>
+                    
+                    <h3><i class="fa fa-quote-left"></i>The name of the Lord is a strong tower. The righteous run into it and they are safe.<i class="fa fa-quote-right"></i><span>Proverbs 18:10</span></h3>
+                    <div class="about-review">
+                        <div class="review-1">
+                            <i class="fa fa-heart-o"></i>
+                            <h4>Place of Heaven</h4>
+                            <p>In Blessed Minstry you will encounter Christ through the demonstration of His love.</p>
+                        </div>
+                        <div class="review-2">
+                            <i class="fa fa-book"></i>
+                            <h4>Study the Bible</h4>
+                            <p>Learn the Bible in order to have intimate fellowship with the Holy Spirit.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRAYER -->
+    <div class="next-object prayer-panel">
+        <div class="prayer-text">
+            <div class="prayer-icon">
+                <i class="fa fa-heart-o"></i>
+            </div>
+            <h1>"Pray! and Listen to God in your heart! Meditate deeply, passionately and repeatedly on the Word of God"</h1>
+            <h4>Joshua 1:8</h4>
+        </div>
+       
+    </div>
+
+    <section class="next-object person-content">
+        <div class="section-title">
+            <h2>our team</h2>
+            <h1>pastors</h1>
+        </div>
+        <div class="min-box">
+            <div class="box-color">
+                <div class="red-line">
+                    <div class="white-box"></div>
+                </div>
+            </div>
+        </div>
+        <div class="person">
+            <div class="person-col">
+                <img src="/images/C-21.jpg" alt="" id="person-img">
+                <div class="social-media">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+                <div class="icon-cover">
+                    <div class="icon-box">
+                        <div class="icon-col">
+                            <i class="fa fa-book"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="person-text">
+                    <h3 id="name">richard ahinga</h3>
+                    <h4 id="title">senior pastor</h4>
+                </div>
+            </div>
+            <div class="person-buttons">
+                <i class="fa fa-chevron-left" id="prev-btn"></i>
+                <i class="fa fa-chevron-right" id="next-btn"></i>
+            </div>
+        </div>
+    </section>
+    <!-- SCROLL BUTTON -->
+    <div id="scroll-up">
+        <div class="scroll-section" >
+            <div class="scroll-button">
+                <a href="#">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+   
+
+
+<script>
+    let menuBtn = document.getElementById('menu-btn')
+    let sideNav = document.getElementById('menu')
+    sideNav.style.right = '-250px'
+
+    menuBtn.onclick = ()=>{
+        if(sideNav.style.right === '-250px'){
+            sideNav.style.right = '0px'
+            menuBtn.innerHTML = '<i class="fa fa-times"></i>'
+        }else{
+            sideNav.style.right = '-250px'
+            menuBtn.innerHTML = '<i class="fa fa-bars"></i>'
+        }
+     }
+ 
+</script>
+<script src="/header/header.js"></script>
+<script src="/footer/footer-injector.js"></script>
+<script src="/home/form.js"></script>
+<script src="/about/about.js"></script>
+</body>
+</html>

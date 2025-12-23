@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory Blessed Ministry</title>
+    <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" href="/header/header.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section id="home">
+        <!-- MENU -->
+        <div id="fixed-nav" id="header-nav">
+            <div id="menu-list">
+                <nav id="menu">
+                    <ul>
+                        <li><a href="/index.html"><span></span>home</a></li>
+                        <li><a href="/about/about.html"><span></span>about</a></li>
+                        <li><a href="/sermon/sermons.html"><span></span>sermons</a></li>
+                        <li><a href="/ministry/ministry.html"><span></span>ministries</a></li>
+                        <li><a href="/blog/blog.html"><span></span>blog</a></li>
+                        <li><a href="#"><span></span>contact us</a></li>
+                        <li><a href="/donate/donate.html">donate</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    
+    
+    <div class="logo">
+        <img src="/images/VBM LOGO-1.png" alt="">
+    </div>
+   <div id="menu-btn">
+    <i class="fa fa-bars"></i>
+   </div>
+   <div class="header-banner">
+    <div class="header-text">
+        <ul>
+            <li><a href="/index.html">home</a></li>
+            <li><a href="contact.html">contact us</a></li>
+        </ul>
+        <h1>contact us</h1>
+    </div>
+    
+   </div>
+   <div class="banner-icon">
+        <div class="inner-circle">
+            <i class="fa fa-phone"></i>
+        </div>
+</div>
+<!-- CONTACT DETAILS -->
+<section class="contact-details">
+    <div class="contact-container">
+        <div class="contact-row">
+            <div class="contact-col">
+                <div class="contact-info">
+                    <i class="fa fa-map-marker"></i>
+                    <h1>our location</h1>
+                    <h2>1173-40200, gusii stadium, kisii Kenya</h2>
+                </div>
+            </div>
+            <div class="contact-col">
+                <div class="contact-info">
+                  <i class="fa fa-phone"></i>
+                  <h1>phone number</h1>
+                  <h2>(+254) 729033952</h2>
+                  <h2>(+254) 779862408</h2>
+              </div>
+            </div>
+            <div class="contact-col">
+                <div class="contact-info">
+                    <i class="fa fa-envelope-o"></i>
+                    <h1>email address</h1>
+                    <h2>info@example.com</h2>
+                    <h2>info@victoryblessed.com</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="submit-form">
+    <div class="submit-container">
+        <form action="#">
+            <input type="text" placeholder="name">
+            <input type="text" placeholder="email">
+            <input type="text" placeholder="Phone">
+            <textarea name="" id="" cols="30" rows="8" placeholder="Your Message"></textarea>
+            <input type="button" value="send now" id="submit-btn" onclick="alertText()">
+        </form>
+        <div class="form-img">
+            <img src="/images/C-71.jpg" alt="">
+        </div>
+    </div>
+</section>
+    
+ <!-- SCROLL BUTTON -->
+ <div id="scroll-up">
+    <div class="scroll-section" >
+        <div class="scroll-button">
+            <a href="#">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </div>
+    </div>
+</div>
+    
+
+
+    <script>
+        let menuBtn = document.getElementById('menu-btn')
+        let sideNav = document.getElementById('menu')
+        sideNav.style.right = '-250px'
+
+    menuBtn.onclick = ()=>{
+        if(sideNav.style.right === '-250px'){
+            sideNav.style.right = '0px'
+            menuBtn.innerHTML = '<i class="fa fa-times"></i>'
+        }else{
+            sideNav.style.right = '-250px'
+            menuBtn.innerHTML = '<i class="fa fa-bars"></i>'
+        }
+    }
+         
+    </script>
+    <script src="/header/header.js"></script>
+    <script src="/footer/footer-injector.js"></script>
+    <script src="/home/form.js"></script>
+</body>
+</html>

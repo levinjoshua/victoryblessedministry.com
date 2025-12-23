@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>victory Blessed Ministry</title>
+    <link rel="stylesheet" href="/home/app.css">
+    <link rel="stylesheet" href="/header/header.css">
+    <link rel="stylesheet" href="sermons.css">
+    <link rel="stylesheet" href="sermon-one.css">
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section id="home">
+        <!-- MENU -->
+        <div id="fixed-nav" id="header-nav">
+           <div id="menu-list">
+               <nav id="menu">
+                   <ul>
+                       <li><a href="/home/index.html"><span></span>home</a></li>
+                       <li><a href="/about/about.html"><span></span>about</a></li>
+                       <li><a href="sermons.html"><span></span>sermons</a></li>
+                       <li><a href="/ministry/ministry.html"><span></span>ministries</a></li>
+                       <li><a href="/blog/blog.html"><span></span>blog</a></li>
+                       <li><a href="/contact/contact.html"><span></span>contact us</a></li>
+                       <li><a href="/donate/donate.html">donate</a></li>
+                   </ul>
+               </nav>
+           </div>
+       </div>
+       
+       
+       <div class="logo">
+           <img src="/images/VBM LOGO-1.png" alt="">
+       </div>
+      <div id="menu-btn">
+       <i class="fa fa-bars"></i>
+      </div>
+      <div class="header-banner">
+       <div class="header-text sermon-page">
+           <ul>
+               <li><a href="/home/index.html">home</a></li>
+               <li><a href="sermons.html">sermons</a></li>
+           </ul>
+           <h1>obedience to God through Christ by the Spirit</h1>
+       </div>
+       
+      </div>
+      <div class="banner-icon">
+   
+           <div class="inner-circle sermons">
+               <i class="fa fa-book"></i>
+           </div>
+       </div>
+    </section>
+
+    <!-- MAIN IMAGE -->
+    <div class="main-image">
+       <div class="icon-box">
+        <h1>watch now</h1>
+        <ul>
+            <li>
+                <a href="#"> <i class="fa fa-play"></i></a>
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-youtube"></i></a>
+            </li>
+        </ul>
+       </div>
+    </div>
+
+    <!-- CONTENT -->
+    <section class="main-text">
+        <div class="heading-text">
+            <h2>Sermon by:<span>Pr. Richard Ahinga</span> Categories: <span>Great Faith <i class="fa fa-clock-o"></i> Jan, 15th 2024</span></h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium itaque iure accusantium cumque impedit libero quisquam qui quia ut natus repudiandae dolore deserunt maxime aut unde numquam debitis commodi praesentium, eaque expedita, non autem, consectetur ullam. Maiores, recusandae sequi?</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta quo numquam sint recusandae beatae? Excepturi beatae enim culpa dolore exercitationem harum saepe temporibus odit fugiat in natus consectetur corporis totam eum cumque debitis expedita itaque, nostrum reiciendis? Aliquid, optio aliquam. Atque nulla consequatur perferendis odio quos omnis, veniam iste voluptatum tenetur reiciendis magnam eaque quibusdam cum exercitationem! Dolores quia, voluptates facilis aliquid nobis fugiat? Beatae nesciunt optio eaque! Similique?</p>
+
+        <div class="text-image">
+            <div class="col-img">
+                <img src="/images/cover.jpg" alt="">
+                <span></span>
+            </div>
+            <div class="col-img">
+                <img src="/images/cover2.jpg" alt="">
+                <span></span>
+            </div>
+        </div>
+        <h1>sermon <span>description</span></h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, consequatur. Asperiores optio illo incidunt veritatis quibusdam quos modi animi unde molestiae! Obcaecati porro dignissimos dolorem est sed laudantium maxime doloremque saepe quasi earum autem veritatis reiciendis laborum rem ex inventore, velit quaerat. Exercitationem quidem quis quae placeat rem ipsa quia quisquam quod, labore itaque</p>
+        <br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quos, distinctio vel dignissimos cupiditate ex recusandae dicta ducimus? Impedit voluptatibus saepe asperiores excepturi. Explicabo iure, accusantium natus harum sunt vero!</p>
+    </section>
+
+        <!-- SCROLL BUTTON -->
+    <div id="scroll-up">
+        <div class="scroll-section" >
+            <div class="scroll-button">
+                <a href="#">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let menuBtn = document.getElementById('menu-btn')
+        let sideNav = document.getElementById('menu')
+        sideNav.style.right = '-250px'
+
+        menuBtn.onclick = ()=>{
+            if(sideNav.style.right === '-250px'){
+                sideNav.style.right = '0px'
+                menuBtn.innerHTML = '<i class="fa fa-times"></i>'
+            }else{
+                sideNav.style.right = '-250px'
+                menuBtn.innerHTML = '<i class="fa fa-bars"></i>'
+            }
+         }
+     
+</script>
+    <script src="/header/header.js"></script>
+    <script src="/footer/footer-injector.js"></script>
+    <script src="/home/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+.banner-icon .fa{
+    transform: rotate(30deg);
+}
+.section-title{
+    margin-top: 20px;
+}
+.donate-main{
+    width: 80%;
+    margin: auto;
+}
+.donate-text{
+    margin-bottom: 20px;
+}
+.donate-main p{
+    line-height: 26px;
+    font-weight: 700;
+    opacity: .7;
+}
+.donate-main h3{
+    color: rgb(153, 9, 9);
+    margin-top: 10px;
+    text-align: right;
+    font-style: italic;
+}
+.donate-main h1{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+form{
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+form label, form input{
+    display: block;
+}
+label{
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-bottom: 5px;
+}
+label span{
+    color: red;
+}
+input, select{
+    padding: 10px;
+    margin-top: 5px;
+    text-transform: capitalize;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 10px 0px rgb(61, 6, 124, .3);
+    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+}
+select{
+    margin-left: 5%;
+}
+
+.method-1 input{
+    width: 15px;
+    height: 15px;
+    box-shadow: none;
+}.method-1 label{
+    margin-left: 0px;
+    margin-right: 10px;
+}
+.method-1 label, .method-1 input{
+    display: inline;
+}
+.method-1{
+    padding-left: 5%;
+}
+.payment-method{
+    margin-bottom: 20px;
+}
+#donate-btn{
+    background-color: rgb(202, 4, 4);
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-left: 5%;
+}
+.donate-form h1 a:hover{
+    color: red;
+}
+#donate-btn:hover{
+    background-color: black;
+}
+.cash-deposit{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+.mpesa, .bank{
+    flex-basis: 48%;
+}
+@media screen and (max-width:768px) {
+    .mpesa, .bank{
+        flex-basis: 100%;
+    }
+}
+.form-details,.amount, .payment-method{
+    border: 2px solid rgb(61, 6, 124, .3);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.amount{
+    padding-top: 10px;
+}
+.donate-main h1{
+    margin-left: 5%;
+}
+.camp h1{
+    color: rgb(61, 6, 124, .8);
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.camp-info{
+    box-shadow: 0px 0px 10px 0px rgb(61, 6, 124, .3);
+    padding: 10px;
+}
+.camp{
+   margin:0px auto 40px;
+   width: 80%;
+}
+.camp-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.camp-info{
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    transition: .5s ease-in-out;
+}
+.camp-info:hover{
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+.camp-img img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-bottom: 10px;
+}
+.camp-text h2{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+.camp-text h2 a{
+    color: black;
+    text-decoration: none;
+    opacity: .8;
+}
+.camp-text h2 a:hover{
+    color: blue;
+}
+.camp-text h3{
+    opacity: .7;
+    font-style: italic;
+    font-size: 1rem;
+    color: rgb(151, 6, 6);
+}
+/* DONATION SECTION */
+.mpesa{
+    margin-bottom: 20px;
+    transition: .5s;
+    padding: 10px;
+}
+.mpesa:hover{
+    box-shadow: 0px 0px 10px 0px rgb(14, 192, 14);
+}
+.mpesa-color{
+    background-color: rgb(14, 209, 14);
+    padding-bottom: 10px;
+}
+.mpesa h1 span{
+    color: rgb(14, 192, 14);
+}
+.bank h1 span{
+    color: blue;
+}
+.cash-deposit h1{
+    text-align: left;
+}
+.mpesa-text{
+    padding: 10px 0;
+}
+.mpesa-text h2{
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    padding: 10px;
+}
+.offering-text h2{
+   background-color: #fff;
+   padding: 10px;
+}
+.offering-text h2{
+    text-transform: capitalize;
+    width: 80%;
+    margin: 10px auto;
+}
+.bank{
+    box-shadow: 0px 0px 10px 0px rgb(14, 56, 192);
+    padding: 10px;
+    transition: .5s ease;
+}
+.bank:hover{
+    box-shadow: 0px 0px 10px 0px rgb(14, 192, 14);
+    border-radius: 5px;
+}
+.bank-details h2{
+    text-transform:capitalize;
+    font-size: 1.2rem;
+    width: 80%;
+    margin:10px auto;
+    color: blue;
+}
+.bank-details h2 span{
+    color: black;
+}
+.bank-details h1{
+    opacity: .8;
+    color: rgb(14, 192, 14);
+}
+@media screen and (max-width:950px) {
+    .mpesa-text h1, .offering-text h1, .mpesa h2{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (min-width:768px) and (max-width:950px){
+    .camp-info{
+        flex-basis: 45%;
+    }
+}
+@media screen and (min-width:1024px) {
+    .donate-main h1{
+        text-align: center;
+    }
+    form{
+        width: 60%;
+        margin:40px auto;
+    }
+    .donate-main p{
+        text-align: center;
+    }
+    .donate-text{
+        width: 60%;
+        margin-left: 20%;
+        border: 2px solid rgb(61, 6, 124, .3);
+        padding: 20px 15px;
+        border-radius: 5px;
+    }
+    .camp-info{
+        flex-basis: 30%;
+    }
+    .mpesa-text h1, .offering-text h1{
+        text-align: left;
+        width: 80%;
+        margin:10px auto;
+    }
+}
+.footer form{
+    width: 100%;
+}

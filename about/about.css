@@ -1,0 +1,122 @@
+#menu ul li:nth-child(2) a{
+    color: red;
+}
+.inner-circle .fa-book{
+    transform: rotate(30deg);
+}
+.person-content{
+    padding: 20px 0 40px;
+}
+.icon-cover{
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icon-box{
+    background-color: red;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    transform: rotate(45deg);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.icon-box .icon-col{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.icon-box .fa{
+    transform: rotate(-45deg);
+}
+.person{
+    width: 40%;
+    margin: auto;
+}
+.person img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.person-col{
+    position: relative;
+    box-shadow: 0px 0px 10px 0px rgba(34, 3, 119, 0.3);
+}
+.person-col::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(23, 1, 49);
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+.person-col:hover::before{
+   opacity: .5;
+}
+.person-text{
+    position: absolute;
+    text-align: center;
+    background-color: rgb(23, 1, 49);
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.person h3{
+    font-size: 1rem;
+}
+.person h4{
+    font-size: .8rem;
+    font-size: 300;
+    opacity: .8;
+}
+.person-col .social-media{
+    position: absolute;
+    top: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    /* z-index: 999; */
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+.person-col:hover .social-media{
+    opacity: 1;
+}
+.person-col .social-media .fa{
+    display: block;
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.person-buttons{
+    margin-top: 20px;
+    text-align: center;
+}
+.person-buttons .fa{
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    border: 2px solid black;
+}
+.person-buttons .fa:hover{
+    background-color: black;
+    color: #fff;
+}
+@media screen and (max-width:767px){
+    .person{
+        width: 80%;
+    }
+}

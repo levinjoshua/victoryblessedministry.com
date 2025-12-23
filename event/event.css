@@ -1,0 +1,161 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+.header-text ul li:nth-child(2) a{
+    color: red;
+}
+.header-text h1{
+    font-size: 1rem;
+}
+.banner-icon .fa{
+    transform: rotate(30deg);
+}
+.row-1 p{
+    line-height: 26px;
+    font-weight: 600;
+    opacity: .6;
+}
+.row-1 h1{
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+.row-1 h1 span{
+    color: rgb(185, 5, 5);
+}
+
+.event-container{
+    margin-bottom: 40px;
+}
+
+.row-img, .gallary-img{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gallary-img .img-col{
+    flex-basis: 30%;
+    margin-top: 10px;
+}
+.gallary-img .img-col img{
+    width: 100%;
+}
+.img-col{
+    flex-basis: 48%;
+}
+.img-col img{
+    border-radius: 5px;
+}
+.prayer-panel{
+    margin-top: 20px;
+}
+.row-2 .event-details{
+    text-transform: capitalize;
+}
+.row-2 h1{
+    color: #fff;
+    background-color: rgb(185, 5, 5);
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    font-size: 1.3rem;
+}
+#detail-1 h1{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+#detail-2 h2:last-child span{
+    text-transform: lowercase;
+    color: rgb(185, 5, 5);
+}
+#detail-2 h2:nth-child(4) span{
+    text-transform: lowercase;
+}
+.row-2 h2{
+    font-size: 1rem;
+    line-height: 26px;
+    width: 90%;
+    margin:0px auto 30px;
+}
+.row-2 h2 span{
+    opacity: .5;
+    margin-left: 5px;
+}
+.event-details{
+    margin-bottom: 20px;
+}
+input, select{
+    display: block;
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    margin: 0px auto 20px;
+    border: none;
+    box-shadow: 0px 0px 10px 0px rgb(39, 4, 95, .2);
+}
+input:last-child{
+    color: #fff;
+    width: 100px;
+    cursor: pointer;
+    background-color: rgb(185, 5, 5);
+}
+input:last-child:hover{
+    background-color: black;
+}
+
+@media screen and (max-width:950px){
+    .event-details{
+        box-shadow: 0px 0px 10px 0px rgb(2, 2, 107,.3);
+        padding-bottom: 5px;
+        border-radius: 5px;
+    }
+    .event-details h1{
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+} 
+@media screen and (min-width:768px) and (max-width:950px) {
+    .row-2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .event-details{
+        flex-basis: 48%;
+    }
+}
+@media screen and (min-width:1024px) {
+    .event-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .header-text h1{
+        font-size: 1.4rem;
+    }
+    .row-1{
+        flex-basis: 70%;
+    }
+    .row-2{
+        flex-basis: 28%;
+    }
+    .prayer-text{
+        display: flex;
+        justify-content: space-between;
+    }
+    .prayer-icon{
+        flex-basis: 20%;
+        margin-top: 60px;
+    }
+    .prayer-cont{
+        flex-basis: 78%;
+    }
+    .prayer-panel{
+        height: 300px;
+    }
+    .event-details{
+        width: 100%;
+        padding-left: 10px;
+    }
+}

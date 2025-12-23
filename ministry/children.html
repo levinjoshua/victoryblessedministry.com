@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory Blessed Ministry</title>
+    <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" href="/header/header.css">
+    <link rel="stylesheet" href="ministry.css">
+    <link rel="stylesheet" href="gen-min.css">
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <section id="home">
+        <!-- MENU -->
+        <div id="fixed-nav" id="header-nav">
+           <div id="menu-list">
+               <nav id="menu">
+                   <ul>
+                       <li><a href="/index.html"><span></span>home</a></li>
+                       <li><a href="/about/about.html"><span></span>about</a></li>
+                       <li><a href="/sermon/sermons.html"><span></span>sermons</a></li>
+                       <li><a href="ministry.html"><span></span>ministries</a></li>
+                       <li><a href="/blog/blog.html"><span></span>blog</a></li>
+                       <li><a href="/contact/contact.html"><span></span>contact us</a></li>
+                       <li><a href="/donate/donate.html">donate</a></li>
+                   </ul>
+               </nav>
+           </div>
+       </div>
+       
+       
+       <div class="logo">
+           <img src="/images/VBM LOGO-1.png" alt="">
+       </div>
+      <div id="menu-btn">
+       <i class="fa fa-bars"></i>
+      </div>
+      <div class="header-banner">
+       <div class="header-text sermon-page">
+           <ul>
+               <li><a href="/index.html">home</a></li>
+               <li><a href="sermons.html">children</a></li>
+           </ul>
+           <h1>archives: children's ministry</h1>
+       </div>
+       
+      </div>
+      <div class="banner-icon">
+   
+           <div class="inner-circle sermons">
+               <i class="fa fa-book"></i>
+           </div>
+       </div>
+    </section>
+
+
+    <!-- FAMILY -->
+    <div class="family-container">
+        <div class="family-row">
+            <div class="fam-img">
+                <img src="/images/children-3.jpg" alt="">
+            </div>
+            <div class="fam-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium vel magnam enim cupiditate consequatur aspernatur molestiae eligendi ex incidunt pariatur, fugit dolores doloremque explicabo, minima, tempore atque illo hic aliquid. Eaque quisquam optio, nobis consectetur obcaecati modi similique tempore adipisci!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugiat fugit esse eius, dicta nostrum id assumenda velit tenetur ea nisi explicabo laboriosam quae iure expedita voluptates enim aliquid corrupti. Nihil neque ratione eius deserunt ipsam quibusdam laboriosam repellendus similique!</p>
+            </div>
+        </div>
+        <div class="ministries-row">
+            <h5><a href="children.html">children</a></h5>
+            <h5><a href="women.html">women</a></h5>
+            <h5><a href="men.html">men</a></h5>
+            <h5><a href="family.html">family</a></h5>
+            <h5><a href="web.html">web</a></h5>
+        </div>
+    </div>
+
+          <!-- SCROLL BUTTON -->
+          <div id="scroll-up">
+            <div class="scroll-section" >
+                <div class="scroll-button">
+                    <a href="#">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+ 
+<script>
+    let menuBtn = document.getElementById('menu-btn')
+    let sideNav = document.getElementById('menu')
+    sideNav.style.right = '-250px'
+
+    menuBtn.onclick = ()=>{
+        if(sideNav.style.right === '-250px'){
+            sideNav.style.right = '0px'
+            menuBtn.innerHTML = '<i class="fa fa-times"></i>'
+        }else{
+            sideNav.style.right = '-250px'
+            menuBtn.innerHTML = '<i class="fa fa-bars"></i>'
+        }
+     }
+ 
+</script>
+<script src="/header/header.js"></script>
+<script src="/footer/footer-injector.js"></script>
+<script src="/home/form.js"></script>
+</body>
+</html>

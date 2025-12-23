@@ -1,0 +1,193 @@
+.banner-icon .fa-phone{
+    transform: rotate(-45deg);
+}
+.contact-col .fa-phone{
+    transform: rotate(-90deg);
+}
+#menu ul li:nth-child(6) a{
+    color: rgb(201, 4, 4);
+}    
+.contact-container{
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+}
+.contact-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact-col{
+    flex-basis: 30%;
+    height: 250px;
+    position: relative;
+}
+.contact-col::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(236, 18, 2, 0.8),rgba(17, 2, 56, 0.9)),url('/images/C-1.jpg');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.contact-col:nth-child(2):before{
+    background: linear-gradient(rgba(1, 1, 27, 0.8),rgba(17, 2, 56, 0.9)),url('/images/C-21.jpg');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact-col:nth-child(3):before{
+    background: linear-gradient(rgba(1, 1, 27, 0.8),rgba(17, 2, 56, 0.9)),url('/images/C-31.jpg');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact-info{
+    position: relative;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contact-info .fa-map-marker, .contact-info .fa-envelope-o{
+    position: relative;
+    transform: rotate(0deg);
+}
+.contact-info h1{
+    margin: 10px;
+    font-size: 1.3rem;
+}
+.contact-info h2{
+    font-size: .9rem;
+    padding: 0 40px;
+    line-height: 26px;
+    opacity: .8;
+    text-transform: capitalize;
+}
+@media screen and (max-width:950px) {
+    .contact-col{
+        flex-basis: 48%;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:767px) {
+    .contact-col{
+        flex-basis: 100%;
+        margin-top: 10px;
+    }
+}
+/* SUBMIT SECTION */
+.submit-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+form{
+    flex-basis: 70%;
+    box-shadow: 0px 0px 10px 0px rgba(17, 2, 56, 0.3);
+    padding: 20px 0;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.form-img{
+    flex-basis: 30%;
+}
+.form-img img{
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(17, 2, 56, 0.1);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+input, textarea{
+    display: block;
+    width: 80%;
+    padding: 20px 10px;
+    margin: 10px auto;
+    border: none;
+    box-shadow: 0px 0px 10px 0px rgba(17, 2, 56, 0.2);
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+#submit-btn{
+    padding:15px 10px;
+    background-color: rgb(190, 5, 5);
+    color: #fff;
+    cursor: pointer;
+}
+#submit-btn:hover{
+    background-color: rgb(110, 3, 3);
+}
+/* SROLL BUTTON */
+.scroll-section{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 999;
+    cursor: pointer;
+    visibility: hidden;
+  }
+  .show-scroll .scroll-section{
+    visibility: visible;
+  }
+  .scroll-button .fa{
+    margin: 15px 0;
+    background-color: rgb(179, 12, 12);
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 15px;
+  }
+  .scroll-button{
+    background-color: rgb(179, 12, 12, .5);
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    margin: auto;
+    animation: scrollup .5s infinite;
+    animation-direction: alternate-reverse;
+  }
+@media screen and (min-width:768px) {
+    #submit-btn{
+        width: 150px;
+        margin-left: 10%;
+    }
+    form{
+        box-shadow: 0px 10px 10px 5px rgba(17, 2, 56, 0.1);
+    }
+}
+@media screen and (max-width:1024px) {
+    form, .form-img{
+        flex-basis: 100%;
+    }
+    form{
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .form-img img{
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+        max-height: 300px;
+    }
+}
+@media screen and (max-width:950) {
+    .form-img img{
+        max-height: 250px;
+    }
+}
